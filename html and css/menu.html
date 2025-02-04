@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baristopia - Menu</title>
+
+    <link href="global.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+
+</head>
+
+<header>
+    <a href="homepage.html" class="logo"><img src="/img/Baristopia.png" alt="logoicon">
+        <p>Baristopia</p></a>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar"><img src="/img/naviconicon.jpg" alt="nav-icon" class="nav-icon"></label>
+  
+    <nav>
+    <ul class="nav-right">
+      <li>
+         <a href="javascript:void(0)" class="dropmenu">Our Company</a>
+          <ul class="dropdown-content">
+          <li><a href="aboutus.html">About Baristopia</a></li>
+          <li><a href="career.html">Career</a></li>
+          </ul>
+      </li>
+      
+      <li><a href="promotion.html">Promotion</a></li>
+      
+      <li>
+      <a href="javascript:void(0)" class="dropmenu">Menu</a>
+      <ul class="dropdown-content">
+        <li><a href="menu.html">Drinks</a></li>
+
+      </ul>
+    </li>
+      
+      <li><a href="faq.html">Faq</a></li>
+      <li><a href="review.html">Review</a></li> 
+      <li><a href="cafe_location.html">Location</a></li>
+      <li><a href="login.html">LOGIN</a></li> 
+      <li class="shopping"><a id="cartBttn"><img onclick='showCart()' src="/img/shopping.png"/> <span id="qty">0</span></a></li>
+      
+      
+    </ul>
+    </nav>   
+</header>
+
+<body>
+  <div class="container">
+        <div id="root"></div>
+        <div id="side">
+            <div class="cartItem"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+              <h3>Total</h3>
+                <h2 id="total">$0.00</h2>
+            </div>
+            <div class="checkout"><a href="payment.html">CHECKOUT</a></div>
+        </div>
+    </div>
+<h1>DRINKS</h1>
+<h5>--OUR MENU--</h5>
+<div class="menu">
+    <div class="food-menu">
+        <img src="/img/Asian-Dolce-Latte.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Asian Dolce Latte</h5>
+                <h5 class="price"><p>RM19</p>   
+            </div>
+            <p>Double-shots of the premium, dark-roasted Starbucks Espresso Roast, combine with the uniquely developed dolce sauce</p>
+            <button onclick='addToCart(0)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+    <div class="food-menu">
+        <img src="/img/caffe-americano.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Caffe Americano</h5>
+                <h5 class="price"><p>RM19</p>
+            </div>
+            <p>Rich, full-bodied espresso with hot water in true European style</p>
+            <button onclick='addToCart(1)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+    <div class="food-menu">
+        <img src="/img/caffe-latte.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Caffe Latte</h5>
+                <h5 class="price"><p>RM19</p>
+            </div>
+            <p>Rich, full-bodied espresso in steamed milk, lightly topped with foam</p>
+            <button onclick='addToCart(2)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/caffe-mocha.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Caffe Mocha</h5>
+                <h5 class="price">RM16</h5>
+            </div>
+            <p>Espresso with bittersweet mocha sauce and steamed milk. Topped with sweetened whipped cream</p>
+            <button onclick='addToCart(3)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/cappuccino.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Cappuccino</h5>
+                <h5 class="price">RM17</h5>
+            </div>
+            <p>Espresso with steamed milk, topped with a deep layer of foam</p>
+            <button onclick='addToCart(4)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/caramel-macchiato.webp" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Caramel Macchiato</h5>
+                <h5 class="price">RM15</h5>
+            </div>
+            <p>Freshly steamed milk with vanilla-flavored syrup is marked with espresso, and finished with caramel sauce</p>
+            <button onclick='addToCart(5)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/cocoa-cappuccino.webp" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Cocoa Cappuccino</h5>
+                <h5 class="price">RM17</h5>
+            </div>
+            <p>Gouda cheese, smokehouse sauce, balsamic sautéed onions, bacon</p>
+            <button onclick='addToCart(6)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/cola-foam-iced-expresso.webp" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Cold Foam Iced Espresso</h5>
+                <h5 class="price">RM16</h5>
+            </div>
+            <p>Our Baristopia Signature Espresso lies in wait under a smooth layer of frothed cold foam</p>
+            <button onclick='addToCart(7)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/coldbrew.webp" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Cold Brew</h5>
+                <h5 class="price">RM17</h5>
+            </div>
+            <p>Slow-steeped, small-batch and super smooth. We use a unique craft-brewing process to create a super smooth tasting coffee</p>
+            <button onclick='addToCart(8)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/doubleshot-iced-shaken-espresso.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>DoubleShot-Iced Shaken Espresso</h5>
+                <h5 class="price">RM19</h5>
+            </div>
+            <p>Two fresh shots of espresso, hand shaken with classic syrup and ice, finished with low fat milk mixed with sweetened whipped cream</p>
+            <button onclick='addToCart(9)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/matcha-cold-foam-iced-americano.webp" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Matcha Cold Foam Iced Americano</h5>
+                <h5 class="price">RM16</h5>
+            </div>
+            <p>A dream come true for coffee and tea lovers - Baristopia is reimagining the classic Iced Americano with the infusion of matcha</p>
+            <button onclick='addToCart(10)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/vanilla-sweet-cream-cold-brew.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Vanilla Sweet Cream Cold Brew</h5>
+                <h5 class="price">RM18</h5>
+            </div>
+            <p>Cold Brew topped with a delicate float of house-made vanilla sweet cream that cascades throughout the cup</p>
+            <button onclick='addToCart(11)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/mango-passion-fruit-cold-foam-shaken-iced-black-tea.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Mango Passionfruit Iced Black Tea</h5>
+                <h5 class="price">RM18</h5>
+            </div>
+            <p>With a hint of honey and fruity notes of mango and passionfruit juice-infused Cold Foam</p>
+            <button onclick='addToCart(12)'  id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/ice-shaken-lemon-tea.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Iced Shaken Lemon Tea</h5>
+                <h5 class="price">RM16</h5>
+            </div>
+            <p>Dark black tea! Sunny lemonade! Blend of black tea and lemonade</p>
+            <button onclick='addToCart(13)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+    <div class="food-menu">
+        <img src="/img/green-tea-latte.jpg" alt="coffee">
+        <div class="food-details">
+            <div class="sub-details">
+                <h5>Green Tea Latte</h5>
+                <h5 class="price">RM18</h5>
+            </div>
+            <p>Sweetened matcha green tea with steamed milk</p>
+            <button onclick='addToCart(14)' id="button"><p class="cart">Add To Cart</p></button>
+        </div>
+    </div>
+
+
+
+</div>
+<section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+  <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+  </section>
+
+<script src="home.js"></script>
+<script src="menu.js"></script>
+</body>
+
+<footer>
+  <div id="piclogo"> 
+    <a href="https://www.facebook.com/"><img src="/img/facebookLogo(klien).png" alt="facebookLogo" id="facebooklogo"></a>
+    <a href="https://www.instagram.com/"><img src="/img/instagramLogo(klien).png" alt="instagramLogo" id="instagramlogo"></a>
+    <a href="https://www.youtube.com/"><img src="/img/youtubeLogo(klien).png" alt="youtubeLogo" id="youtubelogo"></a>
+    <a href="https://twitter.com/"><img src="/img/twitterLogo(klien).jpg" alt="twitterLogo" id="twitterlogo"></a>
+  </div>
+  <div id="footertext">
+    <p>
+    <a href="termofuse.html">Terms & Conditions</a> 
+    <b>|</b>
+    <a href="privacypolicy.html">Privacy Policy</a> 
+    <b>|</b> 
+    <a href="contactus.html">Contact Us</a>
+    </p>
+  </div>
+  <div id="copyright">
+    <p>
+      COPYRIGHT <b>©</b> 2023 Baristopia </br>
+    Baristopia (M) Sdn Bhd (8742190-X)</br>
+    </p>
+  </div>
+</footer>
+
+
+</html>

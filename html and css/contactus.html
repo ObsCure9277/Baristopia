@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baristopia - Contact Us</title>
+
+    <link href="contactus.css" rel="stylesheet">
+    <link href="global.css" rel="stylesheet">
+</head>
+
+<header>
+    <a href="homepage.html" class="logo"><img src="/img/Baristopia.png" alt="logoicon">
+        <p>Baristopia</p></a>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar"><img src="/img/naviconicon.jpg" alt="nav-icon" class="nav-icon"></label>
+  
+    <nav>
+    <ul class="nav-right">
+      <li>
+         <a href="javascript:void(0)" class="dropmenu">Our Company</a>
+          <ul class="dropdown-content">
+          <li><a href="aboutus.html">About Baristopia</a></li>
+          <li><a href="career.html">Career</a></li>
+          </ul>
+      </li>
+      
+      <li><a href="promotion.html">Promotion</a></li>
+      
+      <li>
+      <a href="javascript:void(0)" class="dropmenu">Menu</a>
+      <ul class="dropdown-content">
+        <li><a href="menu.html">Drinks</a></li>
+
+      </ul>
+    </li>
+ 
+      <li><a href="faq.html">Faq</a></li>
+      <li><a href="review.html">Review</a></li> 
+      <li><a href="cafe_location.html">Location</a></li>
+      <li><a href="login.html">LOGIN</a></li> 
+    </ul>
+    </nav>
+    
+  </header>
+
+
+<body>
+    <article>
+    <form id="contactform" method="post" role="form">
+        <img src="/img/telluswhatyouthink.png" alt="telluswhatyouthink" id="telluswhatyouthink">
+        <label style="font-size: 1.5em"><h2><b>Topic</b></h2></label>
+        <div>
+            <select id="topics" style="width: 1000px; height: 50px;" required>
+                <option value="">-Select one-</option>
+                <option value="Food">Food</option>
+                <option value="Service">Service</option>
+                <option value="Cleanliness">Cleanliness</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div>
+            <label style="font-size: 1.5em"><h2><b>State</h2></p></label>
+            <select id= "states" style="width: 1000px; height: 50px;" required>
+            <option value="">-Select one-</option>
+            <option value="Kuala Lumpur">Kuala Lumpur</option>
+            <option value="Labuan">Labuan</option>
+            <option value="Johor">Johor</option>
+            <option value="Kedah">Kedah</option>
+            <option value="Kelantan">Kelantan</option>
+            <option value="Malacca">Malacca</option>
+            <option value="Negeri Sembilan">Negeri Sembilan</option>
+            <option value="Pahang">Pahang</option>
+            <option value="Perak">Perak</option>
+            <option value="Perlis">Perlis</option>
+            <option value="Penang">Penang</option>
+            <option value="Putrajaya">Putrajaya</option>
+            <option value="Sabah">Sabah</option>
+            <option value="Sarawak">Sarawak</option>
+            <option value="Selangor">Selangor</option>
+            <option value="Terengganu">Terengganu</option>
+            </select>
+        </div>
+        <div>
+            <label style="font-size: 1.5em"><h2><b>Baristopia's Cafe</b></h2></label>
+            <select id="cafes" style="width: 1000px; height: 50px;" required>
+                <option value="">-Select one-</option>
+            </select>
+        </div>
+
+        <script>
+            // JavaScript code to populate the cafe dropdown based on the selected state
+            const statesSelect = document.getElementById("states");
+            const cafesSelect = document.getElementById("cafes");
+        
+            // Define cafe options for each state
+            const cafeOptions = 
+            {
+                "Kuala Lumpur": [
+                    "Baristopia's AEON Wangsa Maju",
+                    "Baristopia's Bangsar",
+                    "Baristopia's Berjaya Times Square",
+                    "Baristopia's Bukit Bintang",
+                    "Baristopia's Desa Park City",
+                    "Baristopia's Midvalley",
+                    "Baristopia's NU Sentral",
+                    "Baristopia's OUG",
+                    "Baristopia's Sunway Velocity Mall",
+                    "Baristopia's Suria KLCC"
+                ],
+                // Add more cafe options for each state here
+                "Selangor": [
+                    "Baristopia's 1 Utama",
+                    "Baristopia's Ampang Point",
+                    "Baristopia's Batu Caves",
+                    "Baristopia's Citta Mall",
+                    "Baristopia's Cyberjaya",
+                    "Baristopia's IOI Puchong Mall",
+                    "Baristopia's Kajang",
+                    "Baristopia's Kepong",
+                    "Baristopia's SS15 Subang",
+                    "Baristopia's Sri Gombak",
+                    "Baristopia's Sunway Pyramid",
+                    "Baristopia's The Curve",
+                    "Baristopia's The Mines"
+                ],
+                // Add more cafe options for each state here
+                "Labuan": [
+                    "Baristopia's Labuan",
+                    "Baristopia's Labuan Airport"
+                ],
+                // Add more cafe options for each state here
+                "Putrajaya": [
+                    "Baristopia's Alamanda Putrajaya",
+                    "Baristopia's DPULZE Shopping Centre",
+                    "Baristopia's IOI City Mall",
+                    "Baristopia's Shaftsbury Downtown",
+                ],
+                 // Add more cafe options for each state here
+                "Malacca": [
+                    "Baristopia's Bukit Baru, Melaka",
+                    "Baristopia's Dataran Pahlawan Melaka",
+                    "Baristopia's ElementX @ Hatten City",
+                    "Baristopia's Freeport a'Famosa Outlet",
+                    "Baristopia's Kota Laksamana",
+                    "Baristopia's Kuala Sungai Baru",
+                    "Baristopia's Masjid Tanah",
+                    "Baristopia's Melaka Ayer Keroh",
+                    "Baristopia's Merlimau",
+                    "Baristopia's MITC Melaka",
+                    "Baristopia's Mount Austin",
+                    "Baristopia's Plaza Pandan Malim",
+                    "Baristopia's Sungai Udang",
+                ],
+                 // Add more cafe options for each state here
+                "Johor": [
+                    "Baristopia's AEON Mall Tebrau City",
+                    "Baristopia's AEON Mall Bukit Indah",
+                    "Baristopia's Batu Pahat",
+                    "Baristopia's Mount Austin",
+                    "Baristopia's Muar Bakri",
+                    "Baristopia's Paradigm Mall JB",
+                    "Baristopia's Sutera Mall",
+                    "Baristopia's Taman Kota Masai",
+                    "Baristopia's Toppen Shopping Centre",
+                    "Baristopia's The Mall Mid Valley Sounthkey",
+                    "Baristopia's Versis Boulevard Kluang"
+                ],
+                // Add more cafe options for each state here
+                "Negeri Sembilan": [
+                    "Baristopia's CALTEX Temiang",
+                    "Baristopia's Centrio Square, Seremban 2",
+                    "Baristopia's Eco Borealis",
+                    "Baristopia's Gemas",
+                    "Baristopia's Lotus Nilai",
+                    "Baristopia's Palm Mall",
+                    "Baristopia's Seremban Prima Mall",
+                ],
+                // Add more cafe options for each state here
+                "Perak": [
+                    "Baristopia's AEON Mall Ipoh Klebang",
+                    "Baristopia's AEON Mall Station 18",
+                    "Baristopia's AEON Mall Kinta City",
+                    "Baristopia's AEON Mall Seri Manjung",
+                    "Baristopia's Bandar Baru Kampar",
+                    "Baristopia's Ipoh Bond Square",
+                    "Baristopia's Ipoh Parade",
+                    "Baristopia's Ipoh Pengkalan Station 18",
+                    "Baristopia's Ipoh South Gate",
+                    "Baristopia's Kuala Kangsar (Jalan Raja Chulan)",
+                    "Baristopia's Sungai Siput",
+                    "Baristopia's Taiping Kamunting",
+                    "Baristopia's Tanjung Malim",
+                    "Baristopia's Taiping Mall",
+                    "Baristopia's Taiping Pekeliling",                    
+                ],
+                // Add more cafe options for each state here
+                "Penang": [
+                    "Baristopia's Botanica Balik Pulau",
+                    "Baristopia's CALTEX Bandar Putra Bertam",
+                    "Baristopia's Eco Borealis",
+                    "Baristopia's Ferringhi Walk",
+                    "Baristopia's Gurney Paragon Mall",
+                    "Baristopia's IKEA Batu Kawam Link Building (Klippa)",
+                    "Baristopia's Komtar Walk",
+                    "Baristopia's Macalister George Town",
+                    "Baristopia's Plaza Gurney",
+                    "Baristopia's Queensbay Mall",
+                    "Baristopia's Raja Uda Butterworth",
+                    "Baristopia's Sunway Carnival Mall"
+                ],
+                // Add more cafe options for each state here
+                "Pahang": [
+                    "Baristopia's Bentong (Jalan Loke Yew)",
+                    "Baristopia's Cameron Centrum, Brinchang",
+                    "Baristopia's East Coast Mall",
+                    "Baristopia's Kuala Lipis PP Barry"
+                ],
+                // Add more cafe options for each state here
+                "Kedah": [
+                    "Baristopia's Amanjaya Mall",
+                    "Baristopia's Aman Central",
+                    "Baristopia's Central Square",
+                    "Baristopia's Changlun",
+                    "Baristopia's Jetty Point Complex",
+                    "Baristopia's Jitra",
+                    "Baristopia's Serai Wangi Mall",
+                    "Baristopia's Langkawi MAHA Tower ",
+                    "Baristopia's Pendang",
+                ],
+                // Add more cafe options for each state here
+                "Terengganu": [
+                    "Baristopia's KTCC Mall Kuala Terengganu",
+                    "Baristopia's Chukai",
+                    "Baristopia's Dataran Austin"
+                ],
+                // Add more cafe options for each state here
+                "Kelantan": [
+                    "Baristopia's AEON Mall Kota Bharu",
+                    "Baristopia's KB Mall",
+                    "Baristopia's MYDIN Tunjong"
+                ],
+                // Add more cafe options for each state here
+                "Perlis": [
+                    "Baristopia's Kangar Jaya",
+                    "Baristopia's Arau"
+                ],
+                // Add more cafe options for each state here
+                "Sabah": [
+                    "Baristopia's EG Mall Inanam",
+                    "Baristopia's Suria Sabah Shopping Mall",
+                    "Baristopia's Imago Shopping Mall"
+                ],
+                // Add more cafe options for each state here
+                "Sarawak": [
+                    "Baristopia's Vivacity Megamall",
+                    "Baristopia's AEON Mall KUUching Central",
+                    "Baristopia's The Summer Shopping Mall"
+                ]
+                // Add more cafe options for each state here
+            };
+        
+            statesSelect.addEventListener("change", () => {
+                const selectedState = statesSelect.value;
+                cafesSelect.innerHTML = '<option value="">-Select one-</option>'; // Clear previous options
+        
+                if (selectedState && cafeOptions[selectedState]) {
+                    cafeOptions[selectedState].forEach((cafe) => {
+                        const option = document.createElement("option");
+                        option.value = cafe;
+                        option.textContent = cafe;
+                        cafesSelect.appendChild(option);
+                    });
+                }
+            });
+        </script>
+
+        <div>
+            <label style="font-size: 1.5em"><h2><b>Feedback/Suggestion</b></h2></label>
+            <textarea id="contactform-feedback" name="contactform[feedback]" placeholder="Feedback/Suggestion" style="width: 995px; height: 150px;" required></textarea>
+        </div>
+        <div>
+            <img src="/img/CoffeeBean.jpg" id="CoffeeBean">
+        </div>
+        <div>
+            <h1><label style="font-size: 1.5em;"><p><b>Let Us Contact You</b></p></label></h1>
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Name</b></h2></label>
+            <input type="text" id="contactform-name" name="contactform[name]" placeholder="Name" style="width: 450px; height: 50px;" required> 
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Age</b></h2></label>
+            <input type="text" id="contactform-age" name="contactform[age]" placeholder="Age" style="width: 450px; height: 50px;" required> 
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Contact No</b></h2></label>
+            <input type="text" id="contactform-tel" name="contactform[tel]" placeholder="Contact No" style="width: 450px; height: 50px;" required>
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Email</b></h2></label>
+            <input type="text" id="contactform-email" name="contactform[email]" placeholder="Email" style="width: 450px; height: 50px;">
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Address</b></h2></label>
+            <textarea id="contactform-address" name="contactform[address]" placeholder="Address" style="width: 1000px; height: 150px;"></textarea>
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Town / City</b></h2></label>
+            <input type="text" id="contactform-city" name="contactform[city]" placeholder="Town / City" style="width: 450px; height: 50px;">
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>Postcode</b></h2></label>
+            <input type="text" id="contactform-postcode" name="contactform[postcode]" placeholder="Postcode" style="width: 450px; height: 50px;">
+        </div>
+        <div>
+            <label style="font-size: 1.5em;"><h2><b>State</b></h2></label>
+            <input type="text" id="contactform-state" name="contactform[state]" placeholder="State" style="width: 450px; height: 50px;">
+        </div>
+        <div>
+            <input type="checkbox">
+            By providing your personal details on this feedback section, you agree to Baristopia's <a href="privacypolicy.html">Privacy Policy</a>. 
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</article>
+    
+<section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</section>
+ 
+</body>
+
+<footer>
+    <div id="piclogo"> 
+      <a href="https://www.facebook.com/"><img src="/img/facebookLogo(klien).png" alt="facebookLogo" id="facebooklogo"></a>
+      <a href="https://www.instagram.com/"><img src="/img/instagramLogo(klien).png" alt="instagramLogo" id="instagramlogo"></a>
+      <a href="https://www.youtube.com/"><img src="/img/youtubeLogo(klien).png" alt="youtubeLogo" id="youtubelogo"></a>
+      <a href="https://twitter.com/"><img src="/img/twitterLogo(klien).jpg" alt="twitterLogo" id="twitterlogo"></a>
+    </div>
+    <div id="footertext">
+      <p>
+      <a href="termofuse.html">Terms & Conditions</a> 
+      <b>|</b>
+      <a href="privacypolicy.html">Privacy Policy</a> 
+      <b>|</b> 
+      <a href="contactus.html">Contact Us</a>
+      </p>
+    </div>
+    <div id="copyright">
+      <p>
+        COPYRIGHT <b>©</b> 2023 Baristopia </br>
+      Baristopia (M) Sdn Bhd (8742190-X)</br>
+      </p>
+    </div>
+</footer>
+</html>

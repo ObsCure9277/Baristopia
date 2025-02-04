@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.25s;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #eee;
+}
+
+/*/////////////////////// For Font Family///////////////////////////////////*/
+.space-1 {
+  flex: 1;
+}
+
+div.hello {
+  height: 500px ;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-color:white;
+  box-shadow: 0 2px 20px -5px rgb(0 0 0 / 50%);
+  z-index: 1000;  
+  flex-direction: row;
+  top:0;
+  right:0;
+  left:0;
+}
+
+/*CHEAH SENG YIK PART*/
+.checkout a{
+  color: #1d1c1d;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #f2c063; 
+  padding: 5px 30px;
+  border-radius: 50px;
+  margin-top: 10px;
+  display: inline-block;
+  border-style: none;
+}
+
+.checkout a:hover{
+  cursor: pointer;
+  color: white;
+  padding: 7px 45px;
+}
+
+div.container{
+  
+  position: absolute;
+  z-index: 1001;
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  color :black; 
+  margin-left: -10px;
+}
+#root{
+  
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+#side{
+  display: none;
+  width: 40%;
+  border-radius: 30px;
+  background-color: #a2c2db;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+  margin-top: -40px;
+  
+}
+
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid white;
+
+}
+.row-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(0, 47, 167);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.rowing{
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+.cart-item{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 15px;
+  margin: 10px 10px;
+}
+
+.cartItem p {
+  font-size:2em; 
+}
+.cart-item p {
+  margin-left: 50px ;
+}
+.cart-item h2 {
+  position: absolute;
+  left: 90%;
+}
+.cart-item > img{
+cursor: pointer;
+position: absolute;
+left: 96%;
+transition-duration: 10s; 
+transition-timing-function: ease-in-out; 
+}
+.cart-item > img:hover{
+width: 28px;
+height: 28px;
+
+}
+
+.shopping img{
+  width: 40px;
+  margin-top: -11px;
+  margin-bottom: -11px;
+}
+#cartBttn img:hover{
+  cursor: pointer;
+}
+.cart img{
+  width: 40px;
+  margin-left: 25px;
+  margin-right: 0px;
+  position: relative;
+  left: 36%;
+}
+ span#qty{
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  left: 77% ;
+  padding: 3px 10px;
+
+ }
+
+.logo{
+  flex-direction: row;
+  align-items: center;
+  display:flex;
+  margin-left: 60px;
+  padding: 1px 0px;
+  cursor: pointer;
+}
+
+.logo p {
+  margin: 25.8px 3px;
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: italic;
+  color: rgb(0, 47, 167);
+}
+
+.logo img{
+  width: 70px;
+  margin: 5px 0px;   
+  position: relative;
+}
+
+.nav-right{
+  list-style: none;
+  margin-right: 50px;
+}
+
+.nav-right li{
+  position: relative;
+  float:left;
+}
+
+.nav-right li a {
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 600;
+  display:block;
+  color: black;
+  
+}
+
+.nav-right li a:hover{
+  color:  rgb(0, 47, 167);
+  border-bottom: 5px solid rgb(0, 47, 167);
+}
+
+.dropdown-content{
+  list-style: none  ;
+  position: absolute;
+  left: 0;
+  width: 200px ;
+  background-color: white;
+  z-index:1;
+  box-shadow: 0 2px 20px -5px rgb(0 0 0 / 50%);
+  display:none;
+  transition: 0.35s;
+}
+
+.dropdown-content li{
+  width: 100%;  
+}
+
+.nav-right .dropdown-content a:hover{
+  color: white;
+}
+
+.dropdown-content li:hover{
+  background-color:  rgb(0, 47, 167);
+ 
+}
+
+.nav-right li:hover > .dropdown-content{
+  display:initial;
+}
+
+.nav-icon{ 
+height: 4rem;
+padding: 7px 7px;
+margin: 2px 15px 0px 0px;
+cursor: pointer;
+display: none;
+}
+
+.nav-icon:hover, .nav-icon:active{
+  height: 4rem;
+  padding: 7px 7px;
+  margin: 2px 15px 0px 0px;
+  cursor: pointer;
+  content: url("/img/naviconicon\(hover\).png");                                                                 
+}
+
+#menu-bar{
+  display:none
+}
+
+/*////////////////////////////////////For Phone Or Tablet Navbar////////////////////////////////*/
+@media(max-width:1173px){
+  header{
+    padding:10px;
+  }
+  
+  .logo {
+    margin-left: 30px;
+  }
+
+  .logo p{
+    margin: 8.2px 1.5px;
+    font-size: 25px;
+  }
+ 
+  .logo img{
+    width:50px;
+  }
+
+  .nav-icon{
+    display: initial;
+  }
+
+  header nav{
+    position: absolute;
+    top:100%; 
+    left:0; 
+    right:0;
+    background: white;
+    border-top: 4px solid #1b1c1d;
+    border-bottom: 4px solid #1d1c1d;
+    display:none;
+  }
+
+  .nav-right .dropdown-content a:hover{
+    color: #002fa7;
+  }
+
+  .nav-right{
+    display: initial;
+  }
+
+  header nav .nav-right li{
+    width:200%;
+    margin-top: -15px;
+  }
+ 
+ header nav .nav-right li .dropdown-content{ 
+    position: relative;
+    width:100%;
+  }
+  
+  header nav .nav-right .dropdown-content li{
+    background:#eee;
+  }
+
+  #menu-bar:checked ~ nav{
+    display: initial;
+  }
+
+  video{
+    width: 100%;
+  }
+}
+
+/*//////////////////////////////////////////Footer/////////////////////////////////////////////*/
+
+/*===============
+  Footer Styles
+================*/
+footer {
+    all: initial;
+    background-color: rgb(0, 47, 167);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 30px 60px;
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+div#footertext > p > a:link, div#footertext > p > a:visited {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+div#footertext > p > a:hover, div#footertext > p > a:active {
+    color: rgba(251, 247, 25);
+}
+
+div#footertext > p > b {
+    font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: whitesmoke;
+}
+
+div#copyright > p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder; 
+    font-size: 15px;
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div#piclogo {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+} 
+
+img#facebooklogo {
+    width: 48px;
+    height: 50px;
+    padding-top: 7px;
+}
+
+img#facebooklogo:hover {
+    width: 48px;
+    height: 50px;
+    padding-top: 7px;
+    content: url("/img/facebookLogo\(hover\).png");
+}
+
+img#instagramlogo {
+    width: 60px;
+    height: 60px;
+}
+
+img#instagramlogo:hover {
+    width: 60px;
+    height: 60px;
+    content: url("/img/instagramLogo\(hover\).png");
+}
+
+img#youtubelogo {
+    width: 60px;
+    height: 60px;
+}
+
+img#youtubelogo:hover {
+    width: 60px;
+    height: 60px;
+    content: url("/img/youtubeLogo\(hover\).png");
+}
+
+img#twitterlogo {
+    width: 60px;
+    height: 60px;
+}
+
+img#twitterlogo:hover {
+    width: 60px;
+    height: 60px;
+    content: url("/img/twitterLogo\(hover\).jpg");
+}
+
+/*==================
+  Go To Top Button
+===================*/
+
+section > #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: whitesmoke; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 10px 10px 10px; /* Some padding */
+    font-size: 30px; /* Increase font size */
+    width: 70px;
+    height: 70px;
+}    
+  
+section > #myBtn:hover {
+    color: rgb(0, 47, 167);
+}
+
+/*==================
+  Hide Scrollbar
+===================*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width:1100px){
+  footer{
+  flex-direction: column;
+  display: flex;
+}
+
+}
+

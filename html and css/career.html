@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baristopia - Faq</title>
+  
+  <link href="career.css" rel="stylesheet">
+  <link href="global.css" rel="stylesheet">
+
+</head>
+
+<header>
+  <a href="homepage.html" class="logo"><img src="/img/Baristopia.png" alt="logoicon">
+      <p>Baristopia</p></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><img src="/img/naviconicon.jpg" alt="nav-icon" class="nav-icon"></label>
+
+  <nav>
+  <ul class="nav-right">
+    <li>
+       <a href="javascript:void(0)" class="dropmenu">Our Company</a>
+        <ul class="dropdown-content">
+        <li><a href="aboutus.html">About Baristopia</a></li>
+        <li><a href="career.html">Career</a></li>
+        </ul>
+    </li>
+    
+    <li><a href="promotion.html">Promotion</a></li>
+    
+    <li>
+    <a href="javascript:void(0)" class="dropmenu">Menu</a>
+    <ul class="dropdown-content">
+      <li><a href="menu.html">Drinks</a></li>
+
+    </ul>
+  </li>
+     
+    <li><a href="faq.html">Faq</a></li>
+    <li><a href="review.html">Review</a></li> 
+    <li><a href="cafe_location.html">Location</a></li>
+    <li><a href="login.html">LOGIN</a></li> 
+  </ul>
+  </nav>
+  
+</header>
+    <body>
+        <main>
+          <div id="careerbox">
+            <div id="career">
+              <div id="careerword">
+                <h1>Our Career</h1>
+                <hr/><br/>
+                <p>Our career in Baristopia can offer a dynamic and rewarding experience for those passionate about coffee, customer service, and hospitality. Working in Baristopia provides an opportunity to immerse oneself in the world of coffee, from learning about different coffee beans and brewing methods to perfecting latte art. Baristopia, the heart of coffee, not only craft delicious beverages but also create a welcoming atmosphere for customers. This career path allows for growth, with potential roles ranging from barista to shift supervisor and even shop manager. Interacting with a diverse clientele fosters excellent communication and problem-solving skills, making it a valuable stepping stone in the hospitality industry. Plus, the sense of community that Baristopia often embody can create a fulfilling and social work environment, where your daily cup of coffee becomes a symbol of your craft and connection to others.</p>
+                <br><br>
+                <div id="button">
+                  <a href="#video">Watch Guidance Video</a>
+                  <br>
+                  <br>
+                  <a href="#applierForm">Go To Apply</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="video">
+            <div id="videoword">
+            <h3>Below is what's it is really like working in Baristopia</h3>
+            <hr>
+            </div>
+            <div id="video-container">
+              <video src="/img/coffeeWhat's it really like being a barista_.mp4" width="50%" height="450px" controls>Video Not Supported</video>
+            </div>
+          </div>
+
+          <div id="formword">
+            <h3>Application Form</h3>
+            <hr>
+          </div>
+          <div id="form">
+            <form id="Form" method="post">
+                <fieldset id="applierForm">
+                    <legend>Application for Baristopia's Career</legend>
+
+                    <label for="applierName">Name:  </label>
+                    <input type="text" id="applierName" name="applierInfo" required /><br/>
+
+                    <label for="applierAge">Age:    </label>
+                    <input type="number" id="applierAge" name="applierInfo" min="19" max="65" required/><br />
+
+                    <label for="applierEmail">E-mail:   </label>
+                    <input type="email" id="applierEmail" name="applierInfo" placeholder="example@gmail.com" required /><br/>
+
+                    <label for="applierContact">Contact Number: </label>
+                    <input type="tel" id="applierContact" name="applierInfo" pattern="^01\d{1}-\d{7,8}$" placeholder="011-56698504 / 012-3456789" required /><br/>
+
+                    <label for="applierfullorpart">Full time or Part time:</label>
+                    <input type="radio" id="fulltime" name="applierInfo" value="yes" required/>
+                    <label for="fulltime">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full time</label>
+                    <input type="radio" id="parttime" name="applierInfo" value="no" required/>
+                    <label for="parttime">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Part time</label><br/>
+
+                    <label for="applierDate">Interview Date:</label>
+                    <input type="date" id="applierDate" name="applierInfo" required /><br />
+                    
+                    <label for="applierTime">Desire Interview Hour:</label>
+                    <select name="applierInfo" id="applierTime">
+                        <option value="time1">10.00-11.00</option>
+                        <option value="time2">11.00-12.00</option>
+                        <option value="time3">12.00-13.00</option>
+                        <option value="time4">13.00-14.00</option>
+                        <option value="time5">14.00-15.00</option>
+                        <option value="time6">15.00-16.00</option>
+                    </select><br />
+
+                    <label for="applierJob">Desire Occupation:</label>
+                    <input id="applierJob" name="applierInfo" type="text" list="occupation" />
+                    <datalist id="occupation">
+                      <option value="Cashier">Cashier</option>
+                      <option value="Waiter">Waiter</option>
+                      <option value="Barista">Barista</option>
+                      <option value="Cleaner">Cleaner</option>
+                      <option value="Delivery Man">Delivery Man</option>
+                    </datalist><br><br>
+
+                    <input type="submit" id="submitbutton" name="applierInfo" value="Submit for Interview" />
+
+                    <input type="reset" id="cancelbutton" name="applierInfo" value="Clear all Information" /><br>
+                </fieldset>
+            </form>
+            <script>
+              window.onload = init;
+
+function init() {
+   document.forms[0].onsubmit = function() {
+      if (this.checkValidity()) alert("Your application has been submitted! We will inform the interview date and time by E-mail.");
+      document.getElementById("Form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from actually submitting
+    
+    // Reset the form fields
+    document.getElementById("Form").reset();
+  });
+  return false;
+   }
+   
+   document.getElementById("fulltime").onclick = turnOnFullTime;
+   document.getElementById("parttime").onclick = turnOnPartTime;
+}
+
+function turnOnFullTime() {
+   document.getElementById("applierJob").disabled=false;
+}
+
+function turnOnPartTime() {
+   document.getElementById("applierJob").disabled=true;
+}
+
+
+            </script>
+          </div>
+
+            <section>
+              <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+              <script>
+                  // Get the button
+                  let mybutton = document.getElementById("myBtn");
+                  
+                  // When the user scrolls down 20px from the top of the document, show the button
+                  window.onscroll = function() {scrollFunction()};
+                  
+                  function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                      mybutton.style.display = "block";
+                    } else {
+                      mybutton.style.display = "none";
+                    }
+                  }
+                  
+                  // When the user clicks on the button, scroll to the top of the document
+                  function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                  }
+              </script>
+            </section>
+
+          <footer>
+              <div id="piclogo"> 
+                  <a href="https://www.facebook.com/"><img src="/img/facebookLogo(klien).png" alt="facebookLogo" id="facebooklogo"></a>
+                  <a href="https://www.instagram.com/"><img src="/img/instagramLogo(klien).png" alt="instagramLogo" id="instagramlogo"></a>
+                  <a href="https://www.youtube.com/"><img src="/img/youtubeLogo(klien).png" alt="youtubeLogo" id="youtubelogo"></a>
+                  <a href="https://twitter.com/"><img src="/img/twitterLogo(klien).jpg" alt="twitterLogo" id="twitterlogo"></a>
+                </div>
+                <div id="footertext">
+                  <p>
+                  <a href="termofuse.html">Terms & Conditions</a> 
+                  <b>|</b>
+                  <a href="privacypolicy.html">Privacy Policy</a> 
+                  <b>|</b> 
+                  <a href="contactus.html">Contact Us</a>
+                  </p>
+                </div>
+                <div id="copyright">
+                  <p>
+                    COPYRIGHT <b>©</b> 2023 Baristopia </br>
+                  Baristopia (M) Sdn Bhd (8742190-X)</br>
+                  </p>
+                </div>
+          </footer>
+      </main>
+  </body>
+</html>

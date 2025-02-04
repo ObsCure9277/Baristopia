@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baristopia - Payment</title>
+
+  <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<header>
+  <a href="homepage.html" class="logo"><img src="/img/Baristopia.png" alt="logoicon">
+      <p>Baristopia</p></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><img src="/img/naviconicon.jpg" alt="nav-icon" class="nav-icon"></label>
+
+  <nav>
+  <ul class="nav-right">
+    <li>
+       <a href="javascript:void(0)" class="dropmenu">Our Company</a>
+        <ul class="dropdown-content">
+        <li><a href="aboutus.html">About Baristopia</a></li>
+        <li><a href="career.html">Career</a></li>
+        </ul>
+    </li>
+    
+    <li><a href="promotion.html">Promotion</a></li>
+    
+    <li>
+    <a href="javascript:void(0)" class="dropmenu">Menu</a>
+    <ul class="dropdown-content">
+      <li><a href="menu.html">Drinks</a></li>
+    </ul>
+  </li>
+    
+    <li><a href="faq.html">Faq</a></li>
+    <li><a href="review.html">Review</a></li>
+    <li><a href="cafe_location.html">Location</a></li> 
+    <li><a href="login.html">LOGIN</a></li> 
+  </ul>
+  </nav>
+  
+</header>
+
+<body>
+
+  <!-- Whole form -->
+  <div class="padding">
+    <div class="up"> <!-- Flex upper-->
+      <section class="left"><!-- left form part-->
+        <h1>Checkout</h1>
+        <div class="address">
+          <label for="name"> Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Eva Elve" required>
+          <label for="email"> Email</label>
+          <input type="text" id="email" name="email" placeholder="johnysins@gmail.com" required>
+          <label for="address">Full Address</label>
+          <input type="text" id="adr" name="address" placeholder="69/69B Bandar Menjalara, Kepong 52200" required>
+          <label for="name">Accepted Cards</label>
+          <div class="icon">
+            <img src="/img/card.png" alt="card">
+          </div>
+        </div>
+      </section>
+  
+      <!-- right form part-->
+      <section class="right">
+        <h1 style="margin-left: 5%;">Payment</h1>
+        <div class="payment">
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John Cina" required>
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+          <label for="expyear">Exp Year</label>
+          <input type="text" id="expyear" name="expyear" placeholder="2025" required>
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="333" required>
+        </div>
+      </section>
+    </div> 
+    <label for="couponcode">Coupon Code</label>
+    <input type="text" id="cpc" name="couponcode">
+    <a href="thankyou.html"><input type="submit" class="down" value="Submit For Delivery Order"></a> <!-- Flex lower-->
+  
+  </div>
+  
+</body>
+
+
+</html>
+

@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    min-width: 768px;
+    max-width: 1024px;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 47, 167);
+}
+
+h2 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-top: 20px;
+}
+
+img#telluswhatyouthink {
+    display: block;
+    margin-left: 600px;
+}
+
+img#CoffeeBean {
+    width: 1001px;
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+select#topics, 
+select#states, 
+select#cafes,
+select#tels {
+    font-size: 1.5em;
+}
+
+textarea::placeholder, 
+input::placeholder   {
+    font-size: 1.5em;
+}
+
+input[type=checkbox] {
+    margin-top: 40px;
+}
+
+input[type='submit'],
+input[type='reset'] {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:  rgb(0, 47, 167);
+    transition: linear 0.5s;
+    color: whitesmoke;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover {
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:  rgb(0, 47, 167);
+    color: rgba(251, 247, 25);
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*Showing HTML of layout*/
+div > article {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    min-width: 768px;
+    max-width: 1024px;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body > div{
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div > artical > img{
+    float: left;
+}
+
+aside{
+    border: 10px solid #614e32;
+    border-radius: 10px;
+    background-color: #A69581;
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    position: relative;
+    
+}
+
+/*Showing Font Style*/
+h3{
+    text-shadow: 2px 2px #D9CCb4;
+}
+
+p{
+    line-height: 25px;
+}
+
+/*Iframe*/
+div > iframe{
+    width: auto;
+    height: 300px;
+    border: 2px solid red;
+    margin: 5% 0% 5% 0%;
+}
+
+/*Moblie Styles
+@media only screen and (max-width: 480px){
+    aside{
+        
+    }
+}*/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baristopia - TERMS OF USE</title>
+
+    <link href="thankyou.css" rel="stylesheet">
+    <link href="global.css" rel="stylesheet">
+</head>
+
+<header>
+  <a href="homepage.html" class="logo"><img src="/img/Baristopia.png" alt="logoicon">
+      <p>Baristopia</p></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><img src="/img/naviconicon.jpg" alt="nav-icon" class="nav-icon"></label>
+
+  <nav>
+  <ul class="nav-right">
+    <li>
+       <a href="javascript:void(0)" class="dropmenu">Our Company</a>
+        <ul class="dropdown-content">
+        <li><a href="aboutus.html">About Baristopia</a></li>
+        <li><a href="career.html">Career</a></li>
+        </ul>
+    </li>
+    
+    <li><a href="promotion.html">Promotion</a></li>
+    
+    <li>
+    <a href="javascript:void(0)" class="dropmenu">Menu</a>
+    <ul class="dropdown-content">
+      <li><a href="menu.html">Drinks</a></li>
+
+    </ul>
+  </li>
+
+    <li><a href="faq.html">Faq</a></li>
+    <li><a href="review.html">Review</a></li> 
+    <li><a href="cafe_location.html">Location</a></li>
+    <li><a href="login.html">LOGIN</a></li> 
+  </ul>
+  </nav>
+  
+</header>
+
+<body>
+    
+    <video controls autoplay loop muted>
+        <source src="/img/coffeepreparingvideo.mp4" type="video/mp4">
+    </video>
+
+    <article>
+        <h1>Thank you for your purchase !</h1>
+        <br><br><br><br><br>
+        <h2>
+        I just want to personally thank you for choosing our local business.
+        <br> 
+        We really appreciate it and we hope you'll be satisfied with your orders.
+        <br><br><br><br><br>
+        Sincerely
+        <br><br>
+        Raden Tan Sheng Hao
+        <br>
+        Co-founder of Baristopia
+        </h2>
+    </article>
+
+    <div class="returnmain">
+        <a href="homepage.html"><p style="color: whitesmoke;">Return To Main</p></a>
+    </div>
+
+    <section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+        <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    </section>
+</body>
+
+<footer>
+  <div id="piclogo"> 
+    <a href="https://www.facebook.com/"><img src="/img/facebookLogo(klien).png" alt="facebookLogo" id="facebooklogo"></a>
+    <a href="https://www.instagram.com/"><img src="/img/instagramLogo(klien).png" alt="instagramLogo" id="instagramlogo"></a>
+    <a href="https://www.youtube.com/"><img src="/img/youtubeLogo(klien).png" alt="youtubeLogo" id="youtubelogo"></a>
+    <a href="https://twitter.com/"><img src="/img/twitterLogo(klien).jpg" alt="twitterLogo" id="twitterlogo"></a>
+  </div>
+  <div id="footertext">
+    <p>
+      <a href="termofuse.html">Terms & Conditions</a> 
+      <b>|</b>
+      <a href="privacypolicy.html">Privacy Policy</a> 
+      <b>|</b> 
+      <a href="contactus.html">Contact Us</a>
+    </p>
+  </div>
+  <div id="copyright">
+    <p>
+         COPYRIGHT <b>©</b> 2023 Baristopia </br>
+      Baristopia (M) Sdn Bhd (8742190-X)</br>
+    </p>
+  </div>
+</footer>
+
+</html>

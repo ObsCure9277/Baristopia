@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baristopia - Location</title>
+    <link rel="icon" type="image/x-icon" href="/img/Baristopia.png" >
+    <link href="cafe_location.css" rel="stylesheet" />
+    <link href="global.css" rel="stylesheet">
+  </head>
+    
+  <header>
+    <a href="homepage.html" class="logo"><img src="/img/Baristopia.png" alt="logoicon">
+        <p>Baristopia</p></a>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar"><img src="/img/naviconicon.jpg" alt="nav-icon" class="nav-icon"></label>
+  
+    <nav>
+    <ul class="nav-right">
+      <li>
+         <a href="javascript:void(0)" class="dropmenu">Our Company</a>
+          <ul class="dropdown-content">
+          <li><a href="aboutus.html">About Baristopia</a></li>
+          <li><a href="career.html">Career</a></li>
+          </ul>
+      </li>
+      
+      <li><a href="promotion.html">Promotion</a></li>
+      
+      <li>
+      <a href="javascript:void(0)" class="dropmenu">Menu</a>
+      <ul class="dropdown-content">
+        <li><a href="menu.html">Drinks</a></li>
+
+      </ul>
+    </li>
+ 
+      <li><a href="faq.html">Faq</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="cafe_location.html">Location</a></li> 
+      <li><a href="login.html">LOGIN</a></li> 
+    </ul>
+    </nav>
+    
+  </header>
+    
+  <body>
+    <div>
+      <artical>
+          <h1>Cafe Location</h1>
+
+          <img src="/img/cafe_location1.png" alt="Location_icon" width="150" height="150"/>
+
+          <h3>Discover Our Cafe Location</h3>
+          <p>
+            Welocme to Baristopia, located in the heart of Kuala Lumpur. Our cafe, situated at Beristopia, is thge perfect spot for both locals and tourists.
+          </p><br>
+
+          <p>
+            As you enter, you'll be greated by the aroma of freshly brewed coffee and the friendly feces of our baristas. Our cozy interior and comfortable seating offer a relaxed atmosphere.
+          </p><br>
+
+          <p>
+            Apart from our exceptional coffee,we serve delicious pastries and snacks to complement your beverage. It's ideal for breakfast, brunch, or a quick treat.
+            <br><br>
+            We're proud to be a part of <strong>Setapak's</strong> culture. Our cafe hosts various events, adding to the city's vibrancy.
+          </p><br>
+      </artical>
+  
+      <aside>
+        Whether you're a coffee lover, art enthusiast,<br> 
+        or just seeking a welcoming place to relax, <br>
+        Baristopia is your destination. Visit us at <a href="https://www.google.com/maps/place/YumYum+Canteen+TARUMT/@3.2156405,101.7268476,17.71z/data=!4m6!3m5!1s0x31cc386996155555:0x77dfcf144dc35f05!8m2!3d3.2158566!4d101.7278009!" >Cafe Beristopia</a><br> 
+        and become a part of our coffee journey.<br>
+      </aside>
+    
+      <iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3983.5380217035718!2d101.7285053941956!3d3.2152015485914953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2dc5e067aae3ab84!2sTunku+Abdul+Rahman+University+College!5e0!3m2!1sen!2sus!4v1436418290470" width="100%" height="300" frameborder="0" allowfullscreen=""></iframe>
+         
+    </div>
+
+    <section>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+      <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+      </script>
+  </section>
+
+  </body>
+
+  <footer>
+    <div id="piclogo"> 
+      <a href="https://www.facebook.com/"><img src="/img/facebookLogo(klien).png" alt="facebookLogo" id="facebooklogo"></a>
+      <a href="https://www.instagram.com/"><img src="/img/instagramLogo(klien).png" alt="instagramLogo" id="instagramlogo"></a>
+      <a href="https://www.youtube.com/"><img src="/img/youtubeLogo(klien).png" alt="youtubeLogo" id="youtubelogo"></a>
+      <a href="https://twitter.com/"><img src="/img/twitterLogo(klien).jpg" alt="twitterLogo" id="twitterlogo"></a>
+    </div>
+    <div id="footertext">
+      <p>
+      <a href="termofuse.html">Terms & Conditions</a> 
+      <b>|</b>
+      <a href="privacypolicy.html">Privacy Policy</a> 
+      <b>|</b> 
+      <a href="contactus.html">Contact Us</a>
+      </p>
+    </div>
+    <div id="copyright">
+      <p>
+        COPYRIGHT <b>©</b> 2023 Baristopia </br>
+      Baristopia (M) Sdn Bhd (8742190-X)</br>
+      </p>
+    </div>
+</footer>
+  </html>

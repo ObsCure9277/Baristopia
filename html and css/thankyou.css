@@ -1,0 +1,54 @@
+article 
+{
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: 900;
+    margin-top: -700px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 200px;
+}
+
+h1
+{
+    font-size: 6vh;
+    text-shadow: 8px 5px 0px black;
+}
+
+h2
+{
+    text-shadow: 3px 3px 2px black;
+}
+
+.returnmain
+{
+    font-size: 2vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: 900;
+    margin-top: -100px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+.returnmain:hover
+{
+    font-size: 2.2vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: 900;
+    text-shadow: 0px 0px 20px #002fa7;
+    margin-top: -100px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+video
+{
+    width: 100%;
+}
+
+
+video::-webkit-media-controls 
+{
+    display: none;
+}
+
