@@ -1,12 +1,22 @@
 # BAIT1023-Assignment
-BAIT1023 Group Assignment, July Semester 2023.
+BAIT1023 Group Assignment, Group 01, July Semester 2023.
 
+<b>Website Title</b>
 
+Baristopia
 
+<b>Group Members</b>
 
+1. Ng Shen Zhi <b>(Team Lead)</b>
+2. Cheah Seng Yik
+3. Dylan Kong Jun Hong
+4. Low Jian Hao
+5. Tan Siew Wei
 
+<b>Project Timeline</b>
 
-
+- Project Commencement: 19th September 2023
+- Project Completion: 1st October 2023
 
 
 
