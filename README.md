@@ -1,7 +1,7 @@
 # BAIT1023-Assignment
 BAIT1023 Group Assignment, Group 01, July Semester 2023.
 
-<b>Website Title</b>
+<b>Project Name</b>
 
 Baristopia
 
