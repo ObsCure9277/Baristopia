@@ -2,6 +2,8 @@
 
 A franchise-mode coffee shop web application designed to provide users with a seamless experience in exploring menus, promotions, cafe locations, and more. The platform aims to deliver a modern, user-friendly interface for both customers and administrators, emphasizing quality, convenience, and engagement.
 
+---
+
 ## BAIT1023-Assignment
 BAIT1023 Group Assignment, Group 01, July Semester 2023.
 
@@ -17,6 +19,8 @@ BAIT1023 Group Assignment, Group 01, July Semester 2023.
 
 - Project Commencement: 19th September 2023
 - Project Completion: 1st October 2023
+
+---
 
 ## 🔑 Key Features
 
