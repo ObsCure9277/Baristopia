@@ -1,6 +1,6 @@
 # ☕ Baristopia
 
-Baristopia is a franchise-mode coffee shop web application designed to provide users with a seamless experience in exploring menus, promotions, cafe locations, and more. The platform aims to deliver a modern, user-friendly interface for both customers and administrators, emphasizing quality, convenience, and engagement.
+A franchise-mode coffee shop web application designed to provide users with a seamless experience in exploring menus, promotions, cafe locations, and more. The platform aims to deliver a modern, user-friendly interface for both customers and administrators, emphasizing quality, convenience, and engagement.
 
 ## BAIT1023-Assignment
 BAIT1023 Group Assignment, Group 01, July Semester 2023.
@@ -20,15 +20,24 @@ BAIT1023 Group Assignment, Group 01, July Semester 2023.
 
 ## 🔑 Key Features
 
-- **Homepage:** Introduction to Baristopia and easy navigation to all sections.
-- **Menu:** Browse a variety of drinks and add items to a shopping cart.
-- **Promotions:** View current offers and copy promo codes.
-- **Cafe Locations:** Find Baristopia outlets across Malaysia.
-- **FAQ:** Frequently asked questions for customer support.
-- **User Registration & Login:** Simple forms for account creation and login (demo only).
-- **Contact Us:** Feedback and suggestion form.
-- **Responsive Design:** Optimized for desktop and mobile browsers.
-- **Static Assets:** Rich use of images, videos, and audio for an engaging experience.
+### ✅ Homepage 
+- Introduction to Baristopia and easy navigation to all sections.
+### ✅ Menu
+- Browse a variety of drinks and add items to a shopping cart.
+### ✅ Promotions
+- View current offers and copy promo codes.
+### ✅Cafe Locations
+- Find Baristopia outlets across Malaysia.
+### ✅FAQ
+- Frequently asked questions for customer support.
+### ✅User Registration & Login
+- Simple forms for account creation and login (demo only).
+### ✅Contact Us
+- Feedback and suggestion form.
+### ✅Responsive Design
+- Optimized for desktop and mobile browsers.
+### ✅Static Assets
+- Rich use of images, videos, and audio for an engaging experience.
 
 ---
 
