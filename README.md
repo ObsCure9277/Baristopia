@@ -45,6 +45,14 @@ BAIT1023 Group Assignment, Group 01, July Semester 2023.
       <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>Deployment:</b>
+    </td>
+    <td>
+      <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+    </td>
+  </tr>
 </table>
 
 ---
