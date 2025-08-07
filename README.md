@@ -60,7 +60,6 @@ BAIT1023 Group Assignment, Group 01, July Semester 2023.
 ## 🚀 Getting Started
 Live Preview 👉 <a href="https://baristopia.netlify.app">View Website</a>
 
----
 
 
 
