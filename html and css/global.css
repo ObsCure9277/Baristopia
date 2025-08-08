@@ -536,14 +536,14 @@ div#piclogo {
 } 
 
 img#facebooklogo {
-    width: 48px;
-    height: 50px;
+    width: 58px;
+    height: 60px;
     padding-top: 7px;
 }
 
 img#facebooklogo:hover {
-    width: 48px;
-    height: 50px;
+    width: 58px;
+    height: 60px;
     padding-top: 7px;
     content: url("/img/facebookLogo\(hover\).png");
 }
