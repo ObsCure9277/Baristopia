@@ -46,3 +46,55 @@ h1
     border: 3px solid whitesmoke;
     border-radius: 20px;
 }
+
+/* Responsive styles for homepage.css */
+@media (max-width: 768px) {
+    video {
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    h1 {
+        font-size: 35px !important;
+        margin-top: -200px !important;
+        margin-bottom: 150px !important;
+        padding: 0 20px;
+    }
+    
+    .content {
+        font-size: 18px !important;
+        margin-top: -300px !important;
+        margin-bottom: 80px !important;
+        padding: 0 30px;
+        text-align: center;
+    }
+    
+    .joinbtn {
+        font-size: 25px !important;
+        margin-top: -150px !important;
+        margin-bottom: 100px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    video {
+        height: 250px;
+    }
+    
+    h1 {
+        font-size: 28px !important;
+        margin-top: -150px !important;
+        margin-bottom: 100px !important;
+    }
+    
+    .content {
+        font-size: 16px !important;
+        margin-top: -200px !important;
+        padding: 0 20px;
+    }
+    
+    .joinbtn {
+        font-size: 20px !important;
+        margin-top: -100px !important;
+    }
+}

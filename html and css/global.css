@@ -336,6 +336,149 @@ display: none;
   }
 }
 
+/* Enhanced Mobile Responsive Design */
+@media (max-width: 768px) {
+    /* Typography adjustments */
+    h1 { font-size: 2rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.25rem !important; }
+    
+    /* Container adjustments */
+    body { font-size: 14px; }
+    
+    /* Header improvements */
+    header { padding: 5px 10px; }
+    .logo p { font-size: 18px !important; }
+    .logo img { width: 40px !important; }
+    
+    /* Menu grid responsive */
+    .menu {
+        grid-template-columns: 1fr !important;
+        padding: 0 10px;
+    }
+    
+    /* Cart sidebar mobile */
+    #side {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        z-index: 9999;
+        transition: right 0.3s ease;
+    }
+    
+    #side.show {
+        right: 0;
+    }
+    
+    /* Form responsiveness */
+    .inputBox { width: 100% !important; }
+    
+    /* Footer adjustments */
+    footer {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    #piclogo {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    
+    /* Make social media icons smaller on mobile */
+    #piclogo img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    #footertext {
+        margin-bottom: 15px;
+    }
+    
+    #footertext p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin: 0;
+    }
+    
+    /* Stack footer links vertically on very small screens */
+    #footertext p a {
+        display: inline-block;
+        margin: 2px 5px;
+    }
+    
+    #copyright p {
+        font-size: 12px;
+        margin: 0;
+        padding: 15px 0 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px 10px;
+    }
+    
+    #piclogo {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    /* Even smaller icons for very small screens */
+    #piclogo img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    #footertext p {
+        font-size: 10px;
+    }
+    
+    /* Stack footer links vertically on very small screens */
+    #footertext p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    #footertext p a {
+        margin: 0;
+    }
+    
+    #footertext p b {
+        display: none; /* Hide the "|" separators on very small screens */
+    }
+    
+    #copyright p {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    footer {
+        padding: 15px;
+    }
+    
+    #piclogo {
+        margin-bottom: 10px;
+    }
+    
+    #footertext p {
+        font-size: 11px;
+    }
+    
+    #copyright p {
+        font-size: 10px;
+        padding: 10px 0 0 0;
+    }
+}
+
 /*//////////////////////////////////////////Footer/////////////////////////////////////////////*/
 
 /*===============
@@ -406,36 +549,95 @@ img#facebooklogo:hover {
 }
 
 img#instagramlogo {
-    width: 60px;
-    height: 60px;
+    width: 70px;  /* Increased from 60px */
+    height: 70px; /* Increased from 60px */
 }
 
 img#instagramlogo:hover {
-    width: 60px;
-    height: 60px;
+    width: 70px;  /* Increased from 60px */
+    height: 70px; /* Increased from 60px */
     content: url("/img/instagramLogo\(hover\).png");
 }
 
 img#youtubelogo {
-    width: 60px;
-    height: 60px;
+    width: 70px;  /* Increased from 60px */
+    height: 70px; /* Increased from 60px */
 }
 
 img#youtubelogo:hover {
-    width: 60px;
-    height: 60px;
+    width: 70px;  /* Increased from 60px */
+    height: 70px; /* Increased from 60px */
     content: url("/img/youtubeLogo\(hover\).png");
 }
 
 img#twitterlogo {
-    width: 60px;
-    height: 60px;
+    width: 70px;  /* Increased from 60px */
+    height: 70px; /* Increased from 60px */
 }
 
 img#twitterlogo:hover {
-    width: 60px;
-    height: 60px;
+    width: 70px;  /* Increased from 60px */
+    height: 70px; /* Increased from 60px */
     content: url("/img/twitterLogo\(hover\).jpg");
+}
+
+
+/* Enhanced responsive footer logo sizing */
+@media (max-width: 768px) {
+    img#facebooklogo,
+    img#facebooklogo:hover {
+        width: 40px !important;
+        height: 42px !important;  /* Keep Facebook proportions */
+        padding: 3px;
+    }
+    
+    img#instagramlogo,
+    img#youtubelogo,
+    img#twitterlogo {
+        width: 45px !important;   /* Slightly larger than Facebook on mobile */
+        height: 45px !important;
+        padding: 3px;
+    }
+    
+    img#instagramlogo:hover,
+    img#youtubelogo:hover,
+    img#twitterlogo:hover {
+        width: 45px !important;
+        height: 45px !important;
+        transform: scale(1.05);
+    }
+    
+    div#piclogo {
+        gap: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    img#facebooklogo,
+    img#facebooklogo:hover {
+        width: 35px !important;
+        height: 37px !important;  /* Keep Facebook proportions */
+        padding: 2px;
+    }
+    
+    img#instagramlogo,
+    img#youtubelogo,
+    img#twitterlogo {
+        width: 40px !important;   /* Slightly larger than Facebook */
+        height: 40px !important;
+        padding: 2px;
+    }
+    
+    img#instagramlogo:hover,
+    img#youtubelogo:hover,
+    img#twitterlogo:hover {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    div#piclogo {
+        gap: 12px !important;
+    }
 }
 
 /*==================

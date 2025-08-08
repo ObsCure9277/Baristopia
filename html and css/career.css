@@ -170,3 +170,81 @@ footer{
     position: relative !important;
     top: 400px !important;
 }
+
+/* Responsive styles for career.css */
+@media (max-width: 768px) {
+    div#careerbox {
+        margin-bottom: 100px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    div#career {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+    }
+    
+    div#careerword > h1 {
+        font-size: 30px;
+    }
+    
+    div#careerword > p {
+        font-size: 16px;
+    }
+    
+    div#button > a {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+    
+    /* Form responsive */
+    div#formword {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+    }
+    
+    fieldset#applierForm {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        position: static;
+    }
+    
+    fieldset#applierForm > input,
+    fieldset#applierForm > select {
+        position: static;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    fieldset#applierForm > label {
+        display: block;
+        margin: 15px 0 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    div#careerword > h1 {
+        font-size: 24px;
+    }
+    
+    div#careerword > p {
+        font-size: 14px;
+    }
+    
+    div#button > a {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+    
+    div#formword > h3 {
+        font-size: 30px;
+    }
+    
+    fieldset#applierForm {
+        padding: 15px;
+    }
+}

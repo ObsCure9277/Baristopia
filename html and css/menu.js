@@ -127,13 +127,44 @@ function displayCart(a){
 } 
 function showCart(){
     var x = document.getElementById('side'); 
-    if (x.style.display === "none"){ 
-        x.style.display = "block"; 
-    }
-    else{
-        x.style.display = "none"; 
+    if (window.innerWidth <= 768) {
+        // Mobile behavior
+        if (x.classList.contains('show')) {
+            x.classList.remove('show');
+        } else {
+            x.classList.add('show');
+        }
+    } else {
+        // Desktop behavior (existing code)
+        if (x.style.display === "none"){ 
+            x.style.display = "block"; 
+        } else {
+            x.style.display = "none"; 
+        }
     }
 }
+
+// Close cart when clicking outside on mobile
+document.addEventListener('click', function(event) {
+    const cart = document.getElementById('side');
+    const cartButton = document.getElementById('cartBttn');
+    
+    if (window.innerWidth <= 768 && cart.classList.contains('show')) {
+        if (!cart.contains(event.target) && !cartButton.contains(event.target)) {
+            cart.classList.remove('show');
+        }
+    }
+});
+
+// Handle window resize
+window.addEventListener('resize', function() {
+    const cart = document.getElementById('side');
+    if (window.innerWidth > 768) {
+        cart.classList.remove('show');
+        cart.style.display = 'none';
+    }
+});
+
 function delElement(a){
     cart.splice(a,1);
     displayCart();

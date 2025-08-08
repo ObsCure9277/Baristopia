@@ -110,3 +110,77 @@
     text-align: center
   }
   
+  /* Responsive styles for menu.css */
+@media (max-width: 768px) {
+    .menu {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        margin-top: 150px;
+    }
+    
+    .heading {
+        padding: 100px 20px 30px 20px;
+    }
+    
+    .heading > h1 {
+        font-size: 30px;
+    }
+    
+    .heading > h3 {
+        font-size: 18px;
+    }
+    
+    .food-menu {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .food-details {
+        padding: 15px;
+    }
+    
+    .sub-details {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .sub-details h5 {
+        font-size: 18px;
+    }
+    
+    .price {
+        font-size: 16px !important;
+    }
+    
+    /* Cart button responsive */
+    .cart {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        padding: 0 15px;
+        gap: 15px;
+    }
+    
+    .food-menu {
+        padding: 10px;
+    }
+    
+    .food-details {
+        padding: 10px;
+    }
+    
+    .sub-details h5 {
+        font-size: 16px;
+    }
+    
+    .food-details p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+

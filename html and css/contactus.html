@@ -318,9 +318,11 @@
             <label style="font-size: 1.5em;"><h2><b>State</b></h2></label>
             <input type="text" id="contactform-state" name="contactform[state]" placeholder="State" style="width: 450px; height: 50px;">
         </div>
-        <div>
-            <input type="checkbox">
-            By providing your personal details on this feedback section, you agree to Baristopia's <a href="privacypolicy.html">Privacy Policy</a>. 
+        <div class="checkbox-container">
+            <input type="checkbox" id="privacy-agreement" required>
+            <label for="privacy-agreement">
+                By providing your personal details on this feedback section, you agree to Baristopia's <a href="privacypolicy.html">Privacy Policy</a>.
+            </label>
         </div>
         <div>
             <input type="submit" value="Submit">

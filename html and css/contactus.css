@@ -48,6 +48,9 @@ input::placeholder   {
 
 input[type=checkbox] {
     margin-top: 40px;
+    margin-right: 10px; /* Add space between checkbox and text */
+    vertical-align: middle; /* Align with text baseline */
+    display: inline-block; /* Keep on same line */
 }
 
 input[type='submit'],
@@ -74,4 +77,227 @@ input[type='reset']:hover {
     margin-bottom: 50px;
     background-color:  rgb(0, 47, 167);
     color: rgba(251, 247, 25);
+}
+
+/* Fix checkbox alignment with text */
+input[type=checkbox] {
+    margin-top: 40px;
+    margin-right: 10px; /* Add space between checkbox and text */
+    vertical-align: middle; /* Align with text baseline */
+    display: inline-block; /* Keep on same line */
+}
+
+/* Style the checkbox container/label */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.checkbox-container input[type=checkbox] {
+    margin-top: 0; /* Override the 40px margin */
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    cursor: pointer;
+    line-height: 1.4;
+    user-select: none;
+}
+
+/* Responsive checkbox adjustments */
+@media (max-width: 768px) {
+    .checkbox-container {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+    
+    .checkbox-container input[type=checkbox] {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+    
+    /* If using the old style without container */
+    input[type=checkbox] {
+        margin-top: 20px;
+        margin-right: 8px;
+        vertical-align: middle;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .checkbox-container {
+        font-size: 0.9em;
+        margin-top: 12px;
+    }
+    
+    .checkbox-container input[type=checkbox] {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    
+    /* If using the old style without container */
+    input[type=checkbox] {
+        width: 15px;
+        height: 15px;
+        margin-top: 15px;
+        margin-right: 6px;
+        transform: scale(1.0);
+    }
+}
+
+/* Extra fine-tuning for very small screens */
+@media (max-width: 320px) {
+    .checkbox-container {
+        font-size: 0.85em;
+    }
+    
+    .checkbox-container input[type=checkbox] {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Responsive styles for contactus.css */
+@media (max-width: 768px) {
+    article {
+        margin: 120px 20px 50px 20px;
+        min-width: auto;
+        max-width: 100%;
+    }
+    
+    /* Slightly smaller text for mobile */
+    h1 {
+        font-size: 2rem; /* Reduced from default */
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.4rem; /* Reduced from default */
+        text-align: center;
+    }
+    
+    img#telluswhatyouthink {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    img#CoffeeBean {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+    
+    select, input, textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 16px !important; /* Keeps iOS from zooming */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        height: 120px !important;
+    }
+    
+    /* Slightly smaller placeholder text */
+    textarea::placeholder, 
+    input::placeholder {
+        font-size: 14px; /* Reduced from 1.5em */
+    }
+    
+    /* Adjust button text size */
+    input[type='submit'],
+    input[type='reset'] {
+        font-size: 1.2em; /* Reduced from 1.5em */
+        width: 100%;
+        height: 50px;
+        margin: 20px 0;
+    }
+    
+    input[type='submit']:hover,
+    input[type='reset']:hover {
+        width: 100%;
+        font-size: 1.2em; /* Consistent with non-hover */
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        margin: 100px 15px 30px 15px;
+    }
+    
+    /* Even smaller text for small mobile */
+    h1 {
+        font-size: 1.6rem; /* Reduced from 24px */
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.2rem; /* Reduced from 18px */
+        text-align: center;
+    }
+    
+    select, input, textarea {
+        height: 45px !important;
+        font-size: 14px !important; /* Reduced from 16px */
+        padding: 8px;
+    }
+    
+    textarea {
+        height: 100px !important;
+    }
+    
+    /* Smaller placeholder text for small mobile */
+    textarea::placeholder, 
+    input::placeholder {
+        font-size: 12px; /* Further reduced */
+    }
+    
+    /* Smaller button text */
+    input[type='submit'],
+    input[type='reset'] {
+        font-size: 1em; /* Reduced from 1.2em */
+        height: 45px;
+    }
+    
+    input[type='submit']:hover,
+    input[type='reset']:hover {
+        font-size: 1em; /* Consistent */
+    }
+}
+
+/* Extra fine-tuning for very small screens */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.4rem; /* Even smaller for tiny screens */
+    }
+    
+    h2 {
+        font-size: 1.1rem; /* Even smaller for tiny screens */
+    }
+    
+    select, input, textarea {
+        font-size: 13px !important; /* Smaller for very small screens */
+    }
+    
+    textarea::placeholder, 
+    input::placeholder {
+        font-size: 11px; /* Smaller placeholders */
+    }
+    
+    input[type='submit'],
+    input[type='reset'] {
+        font-size: 0.9em; /* Smaller button text */
+    }
 }

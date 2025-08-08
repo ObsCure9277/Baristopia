@@ -77,4 +77,71 @@ body {
   #cpc {
     width: 100%;
   }
-  
+
+  /* Responsive styles for payment.css */
+@media (max-width: 768px) {
+    body {
+        margin: 100px 20px 50px 20px !important;
+    }
+    
+    .padding {
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+    
+    .up {
+        flex-direction: column;
+    }
+    
+    .left, .right {
+        flex: none;
+        width: 100%;
+    }
+    
+    .payment {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    .address {
+        margin-right: 0;
+    }
+    
+    input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .icon img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .down {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 80px 15px 30px 15px !important;
+    }
+    
+    .padding {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
