@@ -78,23 +78,39 @@ h1
 
 @media (max-width: 480px) {
     video {
-        height: 250px;
+        height: 680px; 
+        object-fit: cover;
+        width: 100%;
     }
     
     h1 {
-        font-size: 28px !important;
-        margin-top: -150px !important;
-        margin-bottom: 100px !important;
+        font-size: 24px !important; 
+        margin-top: -380px !important; 
+        margin-bottom: 150px !important;
+        padding: 0 15px; 
+        line-height: 1.2; 
     }
     
     .content {
-        font-size: 16px !important;
-        margin-top: -200px !important;
+        font-size: 14px !important; 
+        margin-top: -580px !important; 
+        margin-bottom: 50px !important; 
         padding: 0 20px;
+        text-align: center; 
+        line-height: 1.4; 
     }
     
     .joinbtn {
-        font-size: 20px !important;
-        margin-top: -100px !important;
+        font-size: 18px !important; 
+        margin-top: -55px !important; 
+        margin-bottom: 150px !important; 
+        padding: 12px 24px; 
+        width: 80%;
+        max-width: 200px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block; 
+        border-radius: 25px;
     }
 }
+

@@ -6,6 +6,7 @@
     justify-content: center;
     position: fixed; 
     margin-bottom: 40px;
+    z-index: -100 !important;
 }
 .coupon-card{
     background-image:linear-gradient(to right , rgb(56, 132, 204) , rgb(72, 40, 216));
